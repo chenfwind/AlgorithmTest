@@ -2,27 +2,7 @@ package com.mufeng;
 
 import java.util.Arrays;
 
-/**
- * @author mufeng
- *
- */
 
-/**
- * @author mufeng
- *
- */
-/**
- * @author mufeng
- *
- */
-/**
- * @author mufeng
- *
- */
-/**
- * @author mufeng
- *
- */
 /**
  * @author mufeng
  *
@@ -37,7 +17,7 @@ public class AlgorithmTest {
 		/*
 		 * ≤Â»Î≈≈–Ú
 		 * */
-//		Algorithm.insertSort(arr);
+		Algorithm.insertSort(arr);
 		/*
 		 * µ›πÈ≈≈–Ú
 		 * */
@@ -57,7 +37,7 @@ public class AlgorithmTest {
 		/***
 		 * øÏ≈≈≈≈–Ú
 		 */
-		Algorithm.quickSort(arr, 0, arr.length-1);
+//		Algorithm.quickSort(arr, 0, arr.length-1);
 		System.out.println(Arrays.toString(arr));
 				
 		

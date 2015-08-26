@@ -21,6 +21,8 @@ public class Algorithm {
 				j--;
 			}
 			arr[j] = key;
+			System.out.println("µÚ"+ i+"´Î£º ");
+			System.out.println(Arrays.toString(arr));
 		}
 	}
 	
