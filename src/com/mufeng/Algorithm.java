@@ -344,7 +344,36 @@ public class Algorithm {
 		}
 		
 	
-	
+		/**
+		 * ¼ÆÊıÅÅĞò
+		 * @param arr
+		 * @param k
+		 * @return
+		 */
+		public static int[] countingSort(int[] arr,int k){
+			int n = arr.length;
+			int B[] = new int[n];
+			int C[] = new int[k+1];
+			int i;
+			for(i = 0;i < k; i++){
+				C[i] = 0;
+			}
+			
+			for(i = 0;i < n; i++){
+				C[arr[i]]++;
+			}
+			
+			for(i = 1; i < k; i++){
+				C[i] = C[i] + C[i - 1];
+			}
+			
+			for(i = n-1; i >= 0; i--){
+				System.out.println(i);
+				B[C[arr[i]]-1] = arr[i];
+				C[arr[i]]--;
+			}
+			return B;
+		}
 	
 	
 	
